@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  header {
+    background-color: rgb(108, 231, 118);
+    padding: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+  }
+  
+  nav {
+    float: left;
+    width: 20%;
+    height: 750px;
+    background: rgb(204, 204, 204);
+    padding: 20px;
+  }
+  
+  content {
+    float: left;
+    padding: 50px;
+    width: 80%;
+    font-size: larger;
+    font-weight: 900;
+    text-align: justify;
+    background-color: #f5f8c3;
+    height: 750px;
+  }
+  
+
+  

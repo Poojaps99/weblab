@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(149, 216, 255);
+    color: honeydew;
+  }
+  
+  h2 {
+    padding: 50px;
+    font-family: "Gill Sans", sans-serif;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(211, 0, 0);
+    text-decoration-line:underline; 
+  }
+
+  h3 {
+    padding: 50px;
+    font-family: "Gill Sans", sans-serif;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+  }
+  
+menu{
+  background-color: greenyellow;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+#menu ul li a {
+  color: rgb(24, 190, 2);
+  font-family: fantasy;
+  font-size: x-large;
+  text-align: center;
+  list-style-type: none;
+        }
+  
+
+  
