@@ -1,0 +1,76 @@
+<html> 
+<body>  
+<h2><b>JavaScript String Methods<b></h2>  
+<p>The length property returns the length of a string:</p> 
+<p id="p1"></p>  
+<p>The indexOf() method returns the position of the first occurrence of a specified text:</p> 
+<p id="p2"></p>  
+<p>The slice() method extract a part of a string 
+and returns the extracted parts in a new string:</p> 
+<p id="p3"></p>  
+<p>The substring() method extract a part of a string and returns the 
+ extracted parts in a new string. </p> 
+<p>Extract Apple  from the string"Intel, Apple,Windows" 
+<p id="p4"></p>  
+<p>Replace "Microsoft" with "Windows" in the "Please visit Microsoft!"</p> 
+<p id="p5">Please visit Microsoft!</p>  
+<p>Convert string to upper case: Hello World!</p> 
+<p id="p6">Hello World!</p> 
+ 
+<p>The concat() method joins two or more strings:</p> 
+<p> concatenate Hello and World!</p> 
+<p id="p7"></p><br><br>  
+<h2><b>JavaScript Math objects</b></h2>  
+<p>Math.round(x) returns the value of x rounded to its nearest integer:4.4</p> 
+<p id="p8"></p>  
+<p>Math.ceil() rounds a number <strong>up</strong> to its nearest integer:4.4</p> 
+<p id="p9"></p>  
+<p>Math.trunc(x) returns the integer part of x: 4.7</p> 
+<p id="p10"></p>  
+<p>Math.pow(x,y) returns the value of x to the power of y: 8^2 </p> 
+<p id="p11"></p>  
+<p>Math.sqrt(x) returns the square root of x: 84</p> 
+<p id="p12"></p>  
+<p>Math.sin(x) returns the sin of x (given in radians):</p> 
+<p>Angle in radians = (angle in degrees) * PI / 180.</p> 
+<p id="p13"></p> 
+ 
+<p>Math.min() returns the lowest value in a list of arguments:0, 150, 30, 20, -8, -200</p> 
+<p id="p14"></p>  
+<p>Math.random() returns a random number between 0 and 1:</p> 
+<p id="p15"></p>  
+<script> 
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; 
+var sln = txt.length; 
+document.getElementById("p1").innerHTML = sln; 
+var str = "Please locate where 'locate' occurs!";  
+var pos = str.indexOf("locate"); 
+document.getElementById("p2").innerHTML = pos;  
+var str = "Samsung, Nokia, Oppo"; 
+var res = str.slice(7,13); 
+document.getElementById("p3").innerHTML = res;   
+var str = "Intel, Apple,Windows"; 
+var res = str.substring(7,12); 
+document.getElementById("p4").innerHTML = res;  
+var str = document.getElementById("p5").innerHTML;  
+  var txt = str.replace("Microsoft","Windows"); 
+  document.getElementById("p5").innerHTML = txt;  
+var text = document.getElementById("p6").innerHTML; 
+  document.getElementById("p6").innerHTML = text.toUpperCase();  
+var text1 = "Hello"; 
+var text2 = "World!"; 
+var text3 = text1.concat(" ",text2); 
+document.getElementById("p7").innerHTML = text3;  
+document.getElementById("p8").innerHTML = Math.round(4.4);  
+document.getElementById("p9").innerHTML = Math.ceil(4.4);  
+document.getElementById("p10").innerHTML = Math.trunc(4.7);  
+document.getElementById("p11").innerHTML = Math.pow(8,2);  
+document.getElementById("p12").innerHTML = Math.sqrt(64);  
+document.getElementById("p13").innerHTML =  
+"The sine value of 90 degrees is " + Math.sin(90 * Math.PI / 180);  
+document.getElementById("p14").innerHTML = 
+Math.min(0, 150, 30, 20, -8, -200);  
+document.getElementById("p15").innerHTML = Math.random();  
+</script>  
+</body> 
+</html> 
